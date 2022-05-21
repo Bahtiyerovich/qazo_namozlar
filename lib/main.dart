@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Qazo Namozlar',
       theme: ThemeData(
         colorScheme: const ColorScheme.light(
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       onGenerateRoute: Routes.instantce.onGeneralRoute,
-      initialRoute: '/homeview',
+      initialRoute: '/splashscreen',
     );
   }
 }
